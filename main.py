@@ -10,7 +10,6 @@ def start(message):
 @bot.message_handler(commands=['stop'])
 def stop(message):
     bot.send_message(message.chat.id, 'Буду ждать тебя снова, прощай')
-    bot.stop_polling()
 
 @bot.message_handler()
 def get_user_text(message):
